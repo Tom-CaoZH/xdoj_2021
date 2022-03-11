@@ -8,7 +8,7 @@ int judge(char* str) {
 												break;
 								}
 
-								if(str[begin] != str[end]) {
+								if(str[begin] != str[end - 1]) {
 												return 0;
 								}
 								end--;
@@ -20,6 +20,7 @@ int judge(char* str) {
 int main(void) {
 				char str[100];
 				scanf("%s",str);
+
 				if (judge(str) == 1) {
 								printf("Yes");
 				}
